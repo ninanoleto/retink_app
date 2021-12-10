@@ -4,8 +4,12 @@ import { boxShadow, colors, mediaQuery } from '../../shared/variables';
 export const Wrapper = styled.div`
   display: flex;
 
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: ${mediaQuery.medium}) {
+    flex-direction: column;
+  }
 `;
 
 export const InfoBoxWrapper = styled.div`
@@ -14,16 +18,14 @@ export const InfoBoxWrapper = styled.div`
   box-shadow: ${boxShadow.shadow};
 
   padding: 15px 30px 5px 20px;
-  width: 400px;
 
   z-index: 4;
   cursor: pointer;
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  padding: 20px 30px;
 
-  margin-bottom: 40px;
+  width: 190px;
+  margin: 0 20px 40px 20px;
   transition: transform 0.5s;
 
   &:hover {
@@ -31,7 +33,7 @@ export const InfoBoxWrapper = styled.div`
   }
 
   @media (max-width: ${mediaQuery.large}) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -61,6 +63,17 @@ export const StyledTitle = styled.h3`
   font-size: 1.1rem;
   margin: 0;
   margin-top: 10px;
+  text-align: center;
+
+  overflow: hidden;
+
+  &::after {
+    display: inline-block;
+    content: '';
+    border-bottom: 0.3rem solid ${colors.purple};
+    width: 70%;
+    margin: 1.5rem 1rem;
+  }
 
   @media (max-width: ${mediaQuery.small}) {
     font-size: 0.9rem;
@@ -72,7 +85,7 @@ export const StyledP = styled.p`
   font-size: 1rem;
   color: ${colors.blueGrey};
   line-height: 25px;
-  padding-right: 10px;
+  text-align: center;
 
   @media (max-width: ${mediaQuery.small}) {
     font-size: 0.8rem;

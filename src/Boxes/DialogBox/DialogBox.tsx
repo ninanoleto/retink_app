@@ -1,7 +1,8 @@
-import { DialogBoxWrapper, El } from './DialogBox.styles';
+import { DialogBoxType } from './Dialog.types';
+import { DialogBoxWrapper, CornerElement } from './DialogBox.styles';
 
 type DialogBoxProps = {
-  about: 'help' | 'click';
+  about: DialogBoxType;
 };
 
 const DialogBox = (props: DialogBoxProps) => {
@@ -9,15 +10,17 @@ const DialogBox = (props: DialogBoxProps) => {
 
   return (
     <>
-      <El about={about} />
+      <CornerElement about={about} />
       <DialogBoxWrapper about={about}>
-        {about === 'help' && (
+        {(about === DialogBoxType.Help && (
           <span>
             <b>Hi there!</b> Need help in creating a Marketing plan for your
             business? I can help you create one using <b>Retink AI engine</b>
           </span>
-        )}
-        {about === 'click' && <span>Click on the options to get started</span>}
+        )) ||
+          (about === DialogBoxType.Click && (
+            <span>Click on the options to get started</span>
+          ))}
       </DialogBoxWrapper>
     </>
   );

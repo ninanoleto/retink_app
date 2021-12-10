@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { colors, mediaQuery } from '../../shared/variables';
+import styled from 'styled-components';
+import { animation, colors, mediaQuery } from '../../shared/variables';
 
 export const ContentWrapper = styled.div`
   display: flex;
@@ -32,32 +32,6 @@ export const Title = styled.h1`
   }
 `;
 
-export const move = keyframes`
-  0% {
-    transform: translatey(0px);
-  }
-  50% {
-    transform: translatey(100px);
-  }
-  100% {
-    transform: translatey(0px);
-  }
-}
-`;
-
-export const move2 = keyframes`
-  0% {
-    transform: translatey(0px) rotate(180deg);
-  }
-  50% {
-    transform: translatey(100px) rotate(180deg);
-  }
-  100% {
-    transform: translatey(0px) rotate(180deg);
-  }
-}
-`;
-
 export const Mascot = styled.img`
   height: 700px;
   position: absolute;
@@ -65,7 +39,7 @@ export const Mascot = styled.img`
   right: 50px;
   z-index: -1;
   overflow: hidden;
-  animation: ${move} 30s ease-in-out infinite;
+  animation: ${animation.move} ${animation.effects};
 
   @media (min-width: ${mediaQuery.xLarge}) {
     right: 10%;

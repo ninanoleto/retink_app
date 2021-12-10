@@ -11,6 +11,7 @@ import {
   Title,
 } from './Home.styles';
 import { InfoBoxIcon, InfoBoxType } from '../../Boxes/InfoBox/InfoBox.types';
+import { DialogBoxType } from '../../Boxes/DialogBox/Dialog.types';
 
 const Home = () => {
   return (
@@ -24,8 +25,8 @@ const Home = () => {
         </Hero>
         <MascotWrapper>
           <Mascot src={mascot} />
-          <DialogBox about="help" />
-          <DialogBox about="click" />
+          <DialogBox about={DialogBoxType.Help} />
+          <DialogBox about={DialogBoxType.Click} />
         </MascotWrapper>
       </ContentWrapper>
     </>

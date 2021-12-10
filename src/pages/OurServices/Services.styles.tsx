@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { colors, mediaQuery } from '../../shared/variables';
 
-export const StyledServices = styled.div``;
-
 export const TitleWrapper = styled.div`
   display: flex;
   align-items: center;
