@@ -1,22 +1,32 @@
 import styled from 'styled-components';
-import { boxShadow, colors, mediaQuery } from '../../shared/variables';
-import { move, move2 } from '../../pages/Home/Home.styles';
+import {
+  animation,
+  boxShadow,
+  colors,
+  mediaQuery,
+} from '../../shared/variables';
+import { DialogBoxType } from './Dialog.types';
 
 type DialogBoxProps = {
-  about: 'help' | 'click';
+  about: DialogBoxType;
 };
 
 const getWidth = (props: DialogBoxProps) =>
-  (props.about === 'help' && `200px`) || (props.about === 'click' && `130px`);
+  (props.about === DialogBoxType.Help && `200px`) ||
+  (props.about === DialogBoxType.Click && `130px`);
 
-const getDialogBoxCorner = (props: DialogBoxProps) =>
-  (props.about === 'help' &&
+const getBorderRadius = (props: DialogBoxProps) =>
+  (props.about === DialogBoxType.Help && '5px 5px 5px 0;') ||
+  (props.about === DialogBoxType.Click && '0px 5px 5px 5px;');
+
+const getCorner = (props: DialogBoxProps) =>
+  (props.about === DialogBoxType.Help &&
     `
     border-color: transparent transparent transparent white;
     right: 250px;
     top: 218px;
     `) ||
-  (props.about === 'click' &&
+  (props.about === DialogBoxType.Click &&
     `
     border-color: transparent white transparent transparent;
     right: 210px;
@@ -24,39 +34,28 @@ const getDialogBoxCorner = (props: DialogBoxProps) =>
     `);
 
 const getPosition = (props: DialogBoxProps) =>
-  (props.about === 'help' &&
+  (props.about === DialogBoxType.Help &&
     `
     right: 20px;
     top: 95px;
     `) ||
-  (props.about === 'click' &&
+  (props.about === DialogBoxType.Click &&
     `
     right: 50px;
     top: 250px;
     `);
 
-const getPositionXLarge = (props: DialogBoxProps) =>
-  (props.about === 'help' &&
-    `
-    right: 8%;
-    `) ||
-  (props.about === 'click' &&
-    `
-    right: 10%;
-    `);
-const getPositionSmall = (props: DialogBoxProps) =>
-  (props.about === 'help' &&
-    `
-    top: 110px;
-    `) ||
-  (props.about === 'click' &&
-    `
-    top: 250px;
-    `);
+const getPositionRightXLarge = (props: DialogBoxProps) =>
+  (props.about === DialogBoxType.Help && `8%`) ||
+  (props.about === DialogBoxType.Click && `10%`);
 
-const getBorderRadius = (props: DialogBoxProps) =>
-  (props.about === 'help' && '5px 5px 5px 0;') ||
-  (props.about === 'click' && '0px 5px 5px 5px;');
+const getPositionTopSmall = (props: DialogBoxProps) =>
+  (props.about === DialogBoxType.Help && `110px`) ||
+  (props.about === DialogBoxType.Click && `250px;`);
+
+const getAnimation = (props: DialogBoxProps) =>
+  (props.about === DialogBoxType.Help && animation.move) ||
+  (props.about === DialogBoxType.Click && animation.move2);
 
 export const DialogBoxWrapper = styled.div<DialogBoxProps>`
   background-color: ${colors.white};
@@ -75,33 +74,30 @@ export const DialogBoxWrapper = styled.div<DialogBoxProps>`
   ${getPosition}
 
   box-shadow: ${boxShadow.shadowLarge};
-  animation: ${move} 30s ease-in-out infinite;
+  animation: ${animation.move} ${animation.effects};
 
   & span {
     color: ${colors.blueGrey};
   }
 
   @media (min-width: ${mediaQuery.xLarge}) {
-    ${getPositionXLarge}
+    right: ${getPositionRightXLarge};
   }
 
   @media (max-width: ${mediaQuery.small}) {
     font-size: 0.8rem;
-    ${getPositionSmall}
+    top: ${getPositionTopSmall};
   }
 `;
 
-const getAnimation = (props: DialogBoxProps) =>
-  (props.about === 'help' && move) || (props.about === 'click' && move2);
-
-export const El = styled.div<DialogBoxProps>`
-  animation: ${(props) => getAnimation(props)} 30s ease-in-out infinite;
+export const CornerElement = styled.div<DialogBoxProps>`
+  animation: ${(props) => getAnimation(props)} ${animation.effects};
   border-width: 0px 20px 20px 20px;
   border-style: solid;
   transform: scale(0.1);
   position: absolute;
   z-index: 20;
-  ${getDialogBoxCorner}
+  ${getCorner}
 
   @media (min-width: ${mediaQuery.xLarge}) {
     display: none;

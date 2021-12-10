@@ -1,3 +1,5 @@
+import { keyframes } from 'styled-components';
+
 export const colors = {
   white: '#FFF',
   offWhite: '#E4E1DD',
@@ -18,4 +20,18 @@ export const mediaQuery = {
   medium: '992px',
   large: '1200px',
   xLarge: '1500px',
+};
+
+export const animation = {
+  move: keyframes`
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(100px); }
+    100% { transform: translatey(0px); }
+  }`,
+  move2: keyframes`
+    0% { transform: translatey(0px) rotate(180deg); }
+    50% { transform: translatey(100px) rotate(180deg); }
+    100% { transform: translatey(0px) rotate(180deg); }
+  }`,
+  effects: '30s ease-in-out infinite',
 };
