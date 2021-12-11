@@ -14,8 +14,11 @@ export const Wrapper = styled.div`
 
 export const InfoBoxWrapper = styled.div`
   background-color: ${colors.white};
+  opacity: 80%;
   border-radius: 5px;
-  box-shadow: ${boxShadow.shadow};
+  box-shadow: ${boxShadow.shadowLarge};
+
+  color: #333;
 
   padding: 15px 30px 5px 20px;
 
@@ -26,10 +29,11 @@ export const InfoBoxWrapper = styled.div`
 
   width: 190px;
   margin: 0 20px 40px 20px;
-  transition: transform 0.5s;
+  transition: all 0.5s ease;
 
   &:hover {
     transform: scale(1.05);
+    opacity: 85%;
   }
 
   @media (max-width: ${mediaQuery.large}) {
@@ -59,11 +63,14 @@ export const IconWrapper = styled.div`
 `;
 
 export const StyledTitle = styled.h3`
-  font-weight: 600;
   font-size: 1.1rem;
   margin: 0;
   margin-top: 10px;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 2px;
 
   overflow: hidden;
 
@@ -83,7 +90,6 @@ export const StyledTitle = styled.h3`
 export const StyledP = styled.p`
   font-weight: 300;
   font-size: 1rem;
-  color: ${colors.blueGrey};
   line-height: 25px;
   text-align: center;
 
