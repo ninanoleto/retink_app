@@ -13,7 +13,7 @@ import AlarmIcon from '@material-ui/icons/Alarm';
 const titleIdx: Record<ServiceBoxType, string> = {
   [ServiceBoxType.Lock]: 'Ac placerat vestibulum',
   [ServiceBoxType.Shop]: 'Non curabitur gravida',
-  [ServiceBoxType.Alarm]: 'Tristique risus nec',
+  [ServiceBoxType.Alarm]: 'Tristique risus necdec',
 };
 
 const paragraphIdx: Record<ServiceBoxType, string> = {
@@ -22,7 +22,7 @@ const paragraphIdx: Record<ServiceBoxType, string> = {
   [ServiceBoxType.Shop]:
     'Svulputate sapien nec sagittis aliquam malesuada, bibendum arcu vitae elementum curabitur vitae nunc sed.',
   [ServiceBoxType.Alarm]:
-    'Mmus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra, maecenas accumsan.',
+    'Mmus mauris vitae ultricies leonec integer malesuada nunc vel risus commodo viverra, maecenas accumsan.',
 };
 
 const iconIdx: Record<ServiceBoxType, JSX.Element> = {
