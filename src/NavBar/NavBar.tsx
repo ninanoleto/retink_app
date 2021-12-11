@@ -19,7 +19,7 @@ const NavBar = () => {
           <StyledLogo src={logo} />
         </Link>
         <LinkContainer>
-          <StyledLink to="/retink_app">Home</StyledLink>
+          <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/services">Services</StyledLink>
           <StyledLink to="/about">About us</StyledLink>
         </LinkContainer>

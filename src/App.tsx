@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 function App() {
   return (
     <Routes>
-      <Route path="/retink_app" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/services" element={<Services />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
