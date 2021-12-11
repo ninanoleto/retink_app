@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/retink_app" element={<Home />} />
-      <Route path="/retink_app/services" element={<Services />} />
+      <Route path="/services" element={<Services />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

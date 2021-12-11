@@ -15,11 +15,11 @@ const NavBar = () => {
   return (
     <>
       <StyledNavBar>
-        <Link to="/">
+        <Link to="/retink_app">
           <StyledLogo src={logo} />
         </Link>
         <LinkContainer>
-          <StyledLink to="/">Home</StyledLink>
+          <StyledLink to="/retink_app">Home</StyledLink>
           <StyledLink to="/services">Services</StyledLink>
           <StyledLink to="/about">About us</StyledLink>
         </LinkContainer>

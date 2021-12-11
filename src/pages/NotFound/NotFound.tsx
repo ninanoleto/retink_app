@@ -5,7 +5,7 @@ const NotFound = () => {
     <ContentWrapper>
       <StyledBg>
         <h1>404 Page Not Found</h1>
-        <StyledLink to="/">Go to Home</StyledLink>
+        <StyledLink to="/retink_app">Go to Home</StyledLink>
       </StyledBg>
     </ContentWrapper>
   );
