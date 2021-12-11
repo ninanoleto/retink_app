@@ -4,34 +4,40 @@ import { boxShadow, colors, mediaQuery } from '../../shared/variables';
 export const Wrapper = styled.div`
   display: flex;
 
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: ${mediaQuery.medium}) {
+    flex-direction: column;
+  }
 `;
 
 export const InfoBoxWrapper = styled.div`
   background-color: ${colors.white};
+  opacity: 80%;
   border-radius: 5px;
-  box-shadow: ${boxShadow.shadow};
+  box-shadow: ${boxShadow.shadowLarge};
+
+  color: #333;
 
   padding: 15px 30px 5px 20px;
-  width: 400px;
 
   z-index: 4;
   cursor: pointer;
 
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  padding: 20px 30px;
 
-  margin-bottom: 40px;
-  transition: transform 0.5s;
+  width: 190px;
+  margin: 0 20px 40px 20px;
+  transition: all 0.5s ease;
 
   &:hover {
     transform: scale(1.05);
+    opacity: 85%;
   }
 
   @media (max-width: ${mediaQuery.large}) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -57,10 +63,24 @@ export const IconWrapper = styled.div`
 `;
 
 export const StyledTitle = styled.h3`
-  font-weight: 600;
   font-size: 1.1rem;
   margin: 0;
   margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 2px;
+
+  overflow: hidden;
+
+  &::after {
+    display: inline-block;
+    content: '';
+    border-bottom: 0.3rem solid ${colors.purple};
+    width: 70%;
+    margin: 1.5rem 1rem;
+  }
 
   @media (max-width: ${mediaQuery.small}) {
     font-size: 0.9rem;
@@ -70,9 +90,8 @@ export const StyledTitle = styled.h3`
 export const StyledP = styled.p`
   font-weight: 300;
   font-size: 1rem;
-  color: ${colors.blueGrey};
   line-height: 25px;
-  padding-right: 10px;
+  text-align: center;
 
   @media (max-width: ${mediaQuery.small}) {
     font-size: 0.8rem;

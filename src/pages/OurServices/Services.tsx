@@ -1,9 +1,8 @@
-import InfoBox from '../../Boxes/InfoBox/InfoBox';
-import { InfoBoxIcon, InfoBoxType } from '../../Boxes/InfoBox/InfoBox.types';
+import ServiceBox from '../../Boxes/ServiceBox/ServiceBox';
+import { ServiceBoxType } from '../../Boxes/ServiceBox/ServiceBox.types';
 import NavBar from '../../NavBar/NavBar';
 import {
   ContentWrapper,
-  StyledServices,
   Title,
   TitleWrapper,
   Wrapper,
@@ -13,18 +12,18 @@ const Services = () => {
   return (
     <>
       <NavBar />
-      <StyledServices>
+      <div>
         <TitleWrapper>
           <Title>Enjoy our Services</Title>
         </TitleWrapper>
         <Wrapper>
           <ContentWrapper>
-            <InfoBox about={InfoBoxType.Lock} icon={InfoBoxIcon.Lock} />
-            <InfoBox about={InfoBoxType.Shop} icon={InfoBoxIcon.Shop} />
-            <InfoBox about={InfoBoxType.Alarm} icon={InfoBoxIcon.Alarm} />
+            <ServiceBox about={ServiceBoxType.Lock} />
+            <ServiceBox about={ServiceBoxType.Shop} />
+            <ServiceBox about={ServiceBoxType.Alarm} />
           </ContentWrapper>
         </Wrapper>
-      </StyledServices>
+      </div>
     </>
   );
 };
