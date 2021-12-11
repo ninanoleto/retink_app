@@ -1,41 +1,41 @@
 import {
   IconWrapper,
-  InfoBoxWrapper,
+  CardWrapper,
   StyledP,
   StyledTitle,
   Wrapper,
-} from './ServiceBox.styles';
-import { ServiceBoxType } from './ServiceBox.types';
+} from './Card.styles';
+import { CardType } from './Card.types';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import AlarmIcon from '@material-ui/icons/Alarm';
 
-const titleIdx: Record<ServiceBoxType, string> = {
-  [ServiceBoxType.Lock]: 'Ac placerat vestibulum',
-  [ServiceBoxType.Shop]: 'Non curabitur gravida',
-  [ServiceBoxType.Alarm]: 'Tristique risus necdec',
+const titleIdx: Record<CardType, string> = {
+  [CardType.Lock]: 'Ac placerat vestibulum',
+  [CardType.Shop]: 'Non curabitur gravida',
+  [CardType.Alarm]: 'Tristique risus necdec',
 };
 
-const paragraphIdx: Record<ServiceBoxType, string> = {
-  [ServiceBoxType.Lock]:
+const paragraphIdx: Record<CardType, string> = {
+  [CardType.Lock]:
     'Eturpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a vitae elementum curabitur.',
-  [ServiceBoxType.Shop]:
+  [CardType.Shop]:
     'Svulputate sapien nec sagittis aliquam malesuada, bibendum arcu vitae elementum curabitur vitae nunc sed.',
-  [ServiceBoxType.Alarm]:
+  [CardType.Alarm]:
     'Mmus mauris vitae ultricies leonec integer malesuada nunc vel risus commodo viverra, maecenas accumsan.',
 };
 
-const iconIdx: Record<ServiceBoxType, JSX.Element> = {
-  [ServiceBoxType.Lock]: <LockOpenIcon />,
-  [ServiceBoxType.Shop]: <AddShoppingCartIcon />,
-  [ServiceBoxType.Alarm]: <AlarmIcon />,
+const iconIdx: Record<CardType, JSX.Element> = {
+  [CardType.Lock]: <LockOpenIcon />,
+  [CardType.Shop]: <AddShoppingCartIcon />,
+  [CardType.Alarm]: <AlarmIcon />,
 };
 
-type ServiceBoxProps = {
-  about: ServiceBoxType;
+type CardProps = {
+  about: CardType;
 };
 
-const ServiceBox = (props: ServiceBoxProps) => {
+const Card = (props: CardProps) => {
   const { about } = props;
 
   const title = titleIdx[about];
@@ -44,15 +44,15 @@ const ServiceBox = (props: ServiceBoxProps) => {
 
   return (
     <Wrapper>
-      <InfoBoxWrapper>
+      <CardWrapper>
         <IconWrapper>{icon}</IconWrapper>
         <div>
           <StyledTitle>{title}</StyledTitle>
           <StyledP>{paragraph}</StyledP>
         </div>
-      </InfoBoxWrapper>
+      </CardWrapper>
     </Wrapper>
   );
 };
 
-export default ServiceBox;
+export default Card;

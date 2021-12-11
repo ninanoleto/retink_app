@@ -1,5 +1,5 @@
-import ServiceBox from '../../Boxes/ServiceBox/ServiceBox';
-import { ServiceBoxType } from '../../Boxes/ServiceBox/ServiceBox.types';
+import Card from '../../Boxes/Card/Card';
+import { CardType } from '../../Boxes/Card/Card.types';
 import NavBar from '../../NavBar/NavBar';
 import {
   ContentWrapper,
@@ -18,9 +18,9 @@ const Services = () => {
         </TitleWrapper>
         <Wrapper>
           <ContentWrapper>
-            <ServiceBox about={ServiceBoxType.Lock} />
-            <ServiceBox about={ServiceBoxType.Shop} />
-            <ServiceBox about={ServiceBoxType.Alarm} />
+            <Card about={CardType.Lock} />
+            <Card about={CardType.Shop} />
+            <Card about={CardType.Alarm} />
           </ContentWrapper>
         </Wrapper>
       </div>

@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const InfoBoxWrapper = styled.div`
+export const CardWrapper = styled.div`
   background-color: ${colors.white};
   opacity: 80%;
   border-radius: 5px;
@@ -20,15 +20,14 @@ export const InfoBoxWrapper = styled.div`
 
   color: #333;
 
-  padding: 15px 30px 5px 20px;
+  /* padding: 15px 30px 5px 20px; */
 
   z-index: 4;
   cursor: pointer;
 
   padding: 20px 30px;
 
-  width: 190px;
-  margin: 0 20px 40px 20px;
+  width: 55%;
   transition: all 0.5s ease;
 
   &:hover {
@@ -37,7 +36,8 @@ export const InfoBoxWrapper = styled.div`
   }
 
   @media (max-width: ${mediaQuery.large}) {
-    width: 100%;
+    width: 80%;
+    margin: 0 15px 40px;
   }
 `;
 

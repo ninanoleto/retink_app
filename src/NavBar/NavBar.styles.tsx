@@ -40,6 +40,10 @@ export const StyledLink = styled(Link)`
   &:hover {
     color: black;
   }
+
+  @media (max-width: ${mediaQuery.xxSmall}) {
+    margin: 0 10px;
+  }
 `;
 
 export const StyledButton = styled.button`

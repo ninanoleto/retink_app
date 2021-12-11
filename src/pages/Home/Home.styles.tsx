@@ -1,13 +1,53 @@
 import styled from 'styled-components';
 import { animation, colors, mediaQuery } from '../../shared/variables';
 
+export const SectionFeatures = styled.div`
+  position: relative;
+  margin: 15% 10% 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const SectionWrapper = styled.div`
+  @media (max-width: ${mediaQuery.large}) {
+    margin-top: 700px;
+  }
+`;
+
+export const Main = styled.div`
+  position: absolute;
+  width: 100%;
+`;
+
+export const TitleFeature = styled.h2`
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: ${colors.blueGrey};
+`;
+
+export const CardsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 15% 70px;
+
+  @media (max-width: ${mediaQuery.large}) {
+    margin: 0 20% 70px;
+    flex-direction: column;
+  }
+`;
+
 export const ContentWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 
   padding: 5% 10%;
-  height: 100vh;
 
   @media (min-width: ${mediaQuery.xLarge}) {
     padding: 5% 20%;
@@ -51,9 +91,9 @@ export const Mascot = styled.img`
     top: 150px;
   }
 
-  @media (max-width: ${mediaQuery.medium}) {
+  @media (max-width: ${mediaQuery.xSmall}) {
     height: 500px;
-    right: 100px;
+    right: 90px;
     top: 150px;
   }
 `;
