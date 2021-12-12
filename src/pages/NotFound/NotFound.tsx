@@ -1,3 +1,4 @@
+import React from 'react';
 import { ContentWrapper, StyledBg, StyledLink } from './NotFound.styles';
 
 const NotFound = () => {

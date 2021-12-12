@@ -1,3 +1,4 @@
+import React from 'react';
 import Card from '../../Boxes/Card/Card';
 import { CardType } from '../../Boxes/Card/Card.types';
 import NavBar from '../../NavBar/NavBar';

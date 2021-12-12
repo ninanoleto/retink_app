@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from '../../NavBar/NavBar';
 import InfoBox from '../../Boxes/InfoBox/InfoBox';
 import DialogBox from '../../Boxes/DialogBox/DialogBox';
