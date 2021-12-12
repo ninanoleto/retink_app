@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "da73c081c529ee51beb528e17a03d053",
+    "revision": "572c53a9e8d9f1f1587a4540e1c8e7b1",
     "url": "/retink_app/index.html"
   },
   {
-    "revision": "33634e116fd5882dbd52",
+    "revision": "c3cc134e64f4dcc327a4",
     "url": "/retink_app/static/css/main.1f17ec8b.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/retink_app/static/js/2.0c81f069.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "33634e116fd5882dbd52",
-    "url": "/retink_app/static/js/main.34b594c2.chunk.js"
+    "revision": "c3cc134e64f4dcc327a4",
+    "url": "/retink_app/static/js/main.9157367e.chunk.js"
   },
   {
     "revision": "6bbe58ccaf678202fb99",

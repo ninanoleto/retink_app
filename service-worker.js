@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/retink_app/precache-manifest.a0df08365a69f52750cbac91074c97ba.js"
+  "/retink_app/precache-manifest.e83da2282267a5cc3e7f8969ceed3ebb.js"
 );
 
 self.addEventListener('message', (event) => {
