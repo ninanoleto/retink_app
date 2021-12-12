@@ -8,6 +8,10 @@ export const SectionFeatures = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: ${mediaQuery.xLarge}) {
+    margin-top: 0px;
+  }
 `;
 
 export const SectionWrapper = styled.div`
@@ -25,7 +29,7 @@ export const TitleFeature = styled.h2`
   text-transform: uppercase;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   color: ${colors.blueGrey};
 `;
 
