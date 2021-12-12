@@ -33,5 +33,20 @@ export const animation = {
     50% { transform: translatey(100px) rotate(180deg); }
     100% { transform: translatey(0px) rotate(180deg); }
   }`,
-  effects: '30s ease-in-out infinite',
+  moveInLeft: keyframes`
+    0% { opacity: 0; transform: translateX(-10rem); }
+    80% { transform: translateX(1rem); }
+    100% { opacity: 1; transform: translateX(0);
+  }`,
+  moveInRight: keyframes`
+    0% { opacity: 0; transform: translateX(10rem); }
+    80% { transform: translateX(-1rem); }
+    100% { opacity: 1; transform: translateX(0);
+  }`,
+  moveInDown: keyframes`
+    0% { opacity: 0; transform: translateY(3rem); }
+    100% { opacity: 1; transform: translateY(0); 
+  }`,
+  slowEffects: '20s ease-in-out infinite',
+  defaultEffects: '2s ease-out',
 };

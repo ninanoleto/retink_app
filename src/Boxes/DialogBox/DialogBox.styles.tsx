@@ -74,7 +74,7 @@ export const DialogBoxWrapper = styled.div<DialogBoxProps>`
   ${getPosition}
 
   box-shadow: ${boxShadow.shadowLarge};
-  animation: ${animation.move} ${animation.effects};
+  animation: ${animation.move} ${animation.slowEffects};
 
   & span {
     color: ${colors.blueGrey};
@@ -91,7 +91,7 @@ export const DialogBoxWrapper = styled.div<DialogBoxProps>`
 `;
 
 export const CornerElement = styled.div<DialogBoxProps>`
-  animation: ${(props) => getAnimation(props)} ${animation.effects};
+  animation: ${(props) => getAnimation(props)} ${animation.slowEffects};
   border-width: 0px 20px 20px 20px;
   border-style: solid;
   transform: scale(0.1);

@@ -36,6 +36,8 @@ export const CardsWrapper = styled.div`
 
   margin: 0 15% 70px;
 
+  animation: ${animation.moveInRight} ${animation.defaultEffects};
+
   @media (max-width: ${mediaQuery.large}) {
     margin: 0 20% 70px;
     flex-direction: column;
@@ -60,6 +62,8 @@ export const ContentWrapper = styled.div`
 
 export const Hero = styled.div`
   padding: 10px 20px;
+
+  animation: ${animation.moveInLeft} ${animation.defaultEffects};
 `;
 
 export const Title = styled.h1`
@@ -79,7 +83,7 @@ export const Mascot = styled.img`
   right: 50px;
   z-index: -1;
   overflow: hidden;
-  animation: ${animation.move} ${animation.effects};
+  animation: ${animation.move} ${animation.slowEffects};
 
   @media (min-width: ${mediaQuery.xLarge}) {
     right: 10%;

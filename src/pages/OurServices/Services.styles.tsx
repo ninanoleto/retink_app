@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors, mediaQuery } from '../../shared/variables';
+import { animation, colors, mediaQuery } from '../../shared/variables';
 
 export const TitleWrapper = styled.div`
   display: flex;
@@ -32,7 +32,8 @@ export const ContentWrapper = styled.div`
   padding: 0 10%;
   height: 100vh;
 
-  @media (min-width: ${mediaQuery.xLarge}) {
+  animation: ${animation.moveInDown} ${animation.defaultEffects};
+  (min-width: ${mediaQuery.xLarge}) {
     padding: 5% 20%;
   }
 
