@@ -18,7 +18,7 @@ const titleIdx: Record<CardType, string> = {
 
 const paragraphIdx: Record<CardType, string> = {
   [CardType.Lock]:
-    'Eturpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a vitae elementum curabitur.',
+    'Eturpis tincidunt id aliquet risus feugiat in ante metus dictum at tempor commodo ullamcorper a vitae elementum.',
   [CardType.Shop]:
     'Svulputate sapien nec sagittis aliquam malesuada, bibendum arcu vitae elementum curabitur vitae nunc sed.',
   [CardType.Alarm]:
