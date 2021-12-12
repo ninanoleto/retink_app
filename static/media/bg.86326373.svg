@@ -1,0 +1,17 @@
+<svg width="1440" height="901" viewBox="0 0 1440 901" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H1440.32V750.446L0 900.625V0Z" fill="url(#paint0_linear_74_77)"/>
+<circle opacity="0.16" cx="212.5" cy="490.5" r="83.5" fill="white"/>
+<circle opacity="0.16" cx="1183.5" cy="238.5" r="83.5" fill="white"/>
+<circle opacity="0.16" cx="1099.5" cy="379.5" r="110.5" fill="white"/>
+<circle opacity="0.16" cx="1332.5" cy="605.5" r="83.5" fill="white"/>
+<circle opacity="0.16" cx="67" cy="745" r="56" fill="white"/>
+<circle opacity="0.16" cx="309" cy="534" r="56" fill="white"/>
+<circle opacity="0.16" cx="1066" cy="574" r="56" fill="white"/>
+<circle opacity="0.16" cx="166.5" cy="249.5" r="105.5" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_74_77" x1="14" y1="26" x2="1429.05" y2="1320.57" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EA0022"/>
+<stop offset="1" stop-color="#754DE8"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/retink_app/static/css/main.1f17ec8b.chunk.css",
+    "main.js": "/retink_app/static/js/main.34b594c2.chunk.js",
+    "main.js.map": "/retink_app/static/js/main.34b594c2.chunk.js.map",
+    "runtime-main.js": "/retink_app/static/js/runtime-main.7d87f2ec.js",
+    "runtime-main.js.map": "/retink_app/static/js/runtime-main.7d87f2ec.js.map",
+    "static/js/2.0c81f069.chunk.js": "/retink_app/static/js/2.0c81f069.chunk.js",
+    "static/js/2.0c81f069.chunk.js.map": "/retink_app/static/js/2.0c81f069.chunk.js.map",
+    "index.html": "/retink_app/index.html",
+    "precache-manifest.a0df08365a69f52750cbac91074c97ba.js": "/retink_app/precache-manifest.a0df08365a69f52750cbac91074c97ba.js",
+    "service-worker.js": "/retink_app/service-worker.js",
+    "static/css/main.1f17ec8b.chunk.css.map": "/retink_app/static/css/main.1f17ec8b.chunk.css.map",
+    "static/js/2.0c81f069.chunk.js.LICENSE.txt": "/retink_app/static/js/2.0c81f069.chunk.js.LICENSE.txt",
+    "static/media/IconHat.svg": "/retink_app/static/media/IconHat.181d2830.svg",
+    "static/media/White.svg": "/retink_app/static/media/White.2a464042.svg",
+    "static/media/index.css": "/retink_app/static/media/bg.86326373.svg",
+    "static/media/mascot.png": "/retink_app/static/media/mascot.e3e721db.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d87f2ec.js",
+    "static/js/2.0c81f069.chunk.js",
+    "static/css/main.1f17ec8b.chunk.css",
+    "static/js/main.34b594c2.chunk.js"
+  ]
+}
