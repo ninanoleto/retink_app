@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  width: 100%;
+
   @media (max-width: ${mediaQuery.medium}) {
     flex-direction: column;
   }
@@ -49,8 +51,11 @@ export const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: black;
+
   transform: scale(2);
-  padding: 30px 0;
+  margin: 5% 50%;
 
   @media (max-width: ${mediaQuery.medium}) {
     transform: scale(1.8);
@@ -64,7 +69,7 @@ export const IconWrapper = styled.div`
 
 export const StyledTitle = styled.h3`
   font-size: 1.1rem;
-  margin: 0;
+  /* margin: 0; */
   margin-top: 10px;
   text-align: center;
   text-transform: uppercase;
