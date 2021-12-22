@@ -1,7 +1,7 @@
-# Retink App Task
+# Retink App 
 
 ## About
 
-Show task built with a responsive interface with TypeScript and React.js.
-
-- react-router-dom was used to manage web routing and styled-components to manage CSS styles.
+Frontend web app built with a responsive interface with TypeScript and React.js.
+- react-router was used to manage web routing and styled-components to manage CSS styles.
+Deployed to github pages: https://ninanoleto.github.io/retink_app
